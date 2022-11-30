@@ -9,6 +9,13 @@ body{
     width: 100%;
     height: auto;
 }
+.quiz-app-2{
+    height: 100vh!important;
+}
+.quiz-continue-btn{
+    margin:20px auto 20px auto;
+    width: 47%;
+}
 .quiz-background-gradient{
     background: hsla(268, 43%, 73%, 1);
     background: linear-gradient(180deg, hsla(268, 43%, 73%, 1) 0%, hsla(267, 66%, 51%, 1) 100%);
@@ -223,7 +230,7 @@ img.quiz-image{
     margin-bottom: 30px;
 }
 .quiz-image-level-up img{
-    width: 80%;
+    width: 90%;
 }
 /* .quiz-image-level img{
     width: 500px;
@@ -260,8 +267,60 @@ section.quiz-footer p {
     margin: 0;
     padding-bottom: 20px;
 }
+.quiz-date {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -30px;
+}
+.quiz-date-star h3{
+    font-family:'Inter', sans-serif;
+    color: #C3B5F1;
+}
+.quiz-date-end h3{
+    font-family:'Inter', sans-serif;
+    color: #B97ED0
+}
+.quiz-info-trulav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quiz-icon-trulav {
+    padding: 10px;
+    border: 2px solid #E1E1E1;
+    border-radius: 10px;
+}
+.quiz-description-info-trulav {
+    width: 60%;
+    margin-left: 20px;
+    font-family:'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+}
 
 @media (max-width: 767px) {
+    .quiz-app-2 {
+        height: 100%!important;
+    }
+    .quiz-date-star h3 {
+        font-size: 16px;
+    }
+    .quiz-date-end h3 {
+        font-size: 16px;
+    }
+    .quiz-description-info-trulav {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+    section.quiz-footer p {
+        font-size: 13px;
+        padding-bottom: 50px;
+    }
+    .quiz-continue-btn {
+        margin: 0px auto 20px auto;
+        width: 97%;
+    }
     .quiz-image-mTruLav img {
         width: 80%;
     }
@@ -380,9 +439,22 @@ section.quiz-footer p {
     .quiz-image-mTruLav img {
         width: 70%;
     }
+    .quiz-description-info-trulav {
+        font-size: 14px;
+    }
+    .quiz-continue-btn {
+        margin: 0px auto 20px auto;
+        width: 47%;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1500px) {
 	.quiz-bg-product {
         height: 380px;
+    }
+    .quiz-app-2 {
+        height: 100%!important;
+    }
+    .quiz-description-info-trulav {
+        font-size: 14px;
     }
 }
