@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Theme</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <section class="quiz-app quiz-background-gradient">
+        <section class="quiz-navbar">
+           <div class="quiz-logo-trulav">
+                <img  src="https://joseaditya.sgp1.cdn.digitaloceanspaces.com/images/TruLav.id/Quiz/Logo-Trulav.png"/>
+           </div>
+           <!-- <div class="quiz-icon">
+                <div class="quiz-icon-image">
+                    <a href="http://">
+                        <img  src="https://joseaditya.sgp1.cdn.digitaloceanspaces.com/images/TruLav.id/Quiz/user.svg"/>
+                    </a>
+                </div>
+                <div class="quiz-icon-image">
+                    <a href="http://">
+                        <img  src="https://joseaditya.sgp1.cdn.digitaloceanspaces.com/images/TruLav.id/Quiz/menu.svg"/>
+                    </a>
+                </div>
+           </div> -->
+        </section>
+        <section class="quiz-content">
+            <section class="quiz-content-row">
+                <div class="quiz-close">
+                    <div class="quiz-icon">
+                        <div class="quiz-icon-image">
+                            <a href="http://">
+                               X
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               <div class="quiz-box-checkout">
+                <div class="quiz-box-checkout-head">
+                    <h2>Pilihan Bijak!</h2>
+                </div>
+                <div class="quiz-box-checkout-body">
+                    <div class="quiz-box-checkout-desc">
+                        <div class="quiz-box-cb-left">
+                            <p>1 Bulan membership VIP:</p>
+                        </div>
+                        <div class="quiz-box-cb-right">
+                            <p>Rp 270.000,-</p>
+                        </div>
+                    </div>
+                    <div class="quiz-box-checkout-desc">
+                        <div class="quiz-box-cb-left">
+                            <p>Diskon perkenalan: 44%</p>
+                        </div>
+                        <div class="quiz-box-cb-right">
+                            <p class="quiz-offer-diskon">-Rp 121.000,-</p>
+                        </div>
+                    </div>
+                    <hr class="quiz-hr-offering"/>
+                    <div class="quiz-box-checkout-desc">
+                        <div class="quiz-box-cb-left">
+                            <p style="color:black;">Total:</p>
+                        </div>
+                        <div class="quiz-box-cb-right">
+                            <p class="quiz-offer-total">Rp 149.000</p>
+                            <p class="quiz-offer-total-desc">Untuk satu bulan</p>
+                        </div>
+                    </div>
+                </div>
+               </div>
+                <div class="quiz-button">
+                    <a href="http://" class="quiz-btn quiz-color-white">Lanjutkan Checkout</a>
+                </div>
+                <div class="quiz-termcondition">
+                    <p>
+                        Kamu setuju untuk berlangganan dengan penawaran khusus Rp 149.000,- per bulan dan berhak mengunci harga ini selama Kamu berlangganan. (Harga akan kembali normal ketika subscription terputus)
+                        
+                    </p>
+                </div>
+                <div class="quiz-secure-payment">
+                    <img src="https://joseaditya.sgp1.cdn.digitaloceanspaces.com/images/TruLav.id/Quiz/Secure%20Icon.png"/>
+                    <p>Transaksi dengan aman dan nyaman</p>
+                </div>
+                <div class="quiz-img-payment">
+                    <img src="https://joseaditya.sgp1.cdn.digitaloceanspaces.com/images/TruLav.id/Quiz/Logo-logo%20v1.png"/>
+                </div>
+            </section>
+        </section>
+        <section class="quiz-footer">
+            <p>Copyright © 2022 PT Jose Upmind Digital Optima</p>
+        </section>
+    </section>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/script.js"></script> 
+    <script>
+       var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        }
+    </script>
+</body>
+</html>
