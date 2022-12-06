@@ -10,6 +10,9 @@ body{
     background: -webkit-linear-gradient(180deg, hsla(268, 43%, 73%, 1) 0%, hsla(267, 66%, 51%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B99ED8", endColorstr="#7A2FD4", GradientType=1 );
 }
+html{
+    scroll-behavior: smooth;
+}
 .quiz-app{
     width: 100%;
     height: auto;
@@ -88,7 +91,7 @@ body{
 }
 .quiz-content-row{
     display: block;
-    width: 35%;
+    width: 28%;
 
     background: white;
     padding-left: 0px;
@@ -138,7 +141,7 @@ img.quiz-image{
     border-radius: 10px;
     text-align: center;
 
-    width: 70%;
+    width: 85%;
     margin: auto;
 }
 .quiz-btn{
@@ -367,7 +370,7 @@ section.quiz-footer p {
 .video-up-performance {
     margin: 0px 10px 0px 0px;
     font-family:'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .quiz-head-table-offer{
@@ -541,7 +544,7 @@ section.quiz-footer p {
     color:#ACACAC;
 }
 .quiz-secure-payment {
-    width: 55%;
+    width: 68%;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -564,7 +567,7 @@ section.quiz-footer p {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 78%;
+    width: 88%;
     margin: 0 auto;
 }
 .quiz-text-icon-benefit p {
@@ -666,11 +669,10 @@ p.quiz-offer-diskon{
 }
 p.quiz-offer-total{
     color:#47CA93;
-    text-align:end;
 }
 p.quiz-offer-total-desc{
     color: black;
-    font-size: 13px;
+    font-size: 18px;
     padding-top: 5px;
 }
 hr.quiz-hr-offering {
@@ -680,7 +682,76 @@ hr.quiz-hr-offering {
     border: 1px solid #D0D0D0;
     margin-top: 15px;
 }
+.quiz-head-offering-box {
+    background-color: white;
+    margin-top: -40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 370px;  
+}
+.quiz-box-offering-margin-top-50{
+    padding-top: 30px;
+}
+.quiz-offering-countdown-wrappe-bg {
+    background: #E8E9F4;
+    padding: 5px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.quiz-offering-countdown-wrappe-bg p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-family:'Inter', sans-serif;
+    font-size: 14px;
+}
+.quiz-offering-countdown-wrappe-bg h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 10px;
+    font-family:'Inter', sans-serif;
+}
+.quiz-head-offering-box-content {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    align-items: center;
+}
+.quiz-continue-btn.quiz-width-60 {
+    width: 31%;
+}
 @media (max-width: 767px) {
+    .quiz-continue-btn.quiz-width-60 {
+        width: 95%!important;
+    }
+    .quiz-termcondition p{
+        font-size: 13px;
+    }
+    .quiz-head-offering-box{
+        margin-top: 0px;
+        height: 250px;
+    }
+    .quiz-offering-countdown-wrappe-bg {
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+    .quiz-offering-countdown-wrappe-bg h3 {
+        text-align: center;
+        font-size: 16px;
+    }
+    .quiz-offering-countdown-wrappe-bg p {
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+    }
+    p.quiz-offer-total-desc{
+        font-size: 13px!important;
+    }
     .quiz-box-checkout-head h2 {
         font-size: 20px;
     }
@@ -753,7 +824,7 @@ hr.quiz-hr-offering {
         width: 90%;
     }
     .quiz-secure-payment {
-        width: 85%;
+        width: 90%;
     }
     .quiz-app-2 {
         height: 100%!important;
@@ -815,9 +886,9 @@ hr.quiz-hr-offering {
     .quiz-icon .quiz-icon-image{
         margin-left: 5px;
         margin-right: 5px;
-        padding: 15px;
+        padding: 10px;
         width: 20px;
-        height: 23px;
+        height: 20px;
     }
     .quiz-content{
         margin-top: 0px;
@@ -889,6 +960,7 @@ hr.quiz-hr-offering {
     }
     .video-up-performance {
         font-size: 14px;
+        line-height: 1.5;
     }
     .quiz-close {
         margin-left: 10px;
@@ -919,7 +991,7 @@ hr.quiz-hr-offering {
     }
     .quiz-content-row {
         display: block;
-        width: 50%;
+        width: 70%;
     }
     .quiz-sosial-media-icon span {
         font-size: 11px;
@@ -956,6 +1028,9 @@ hr.quiz-hr-offering {
         font-size: 14px;
     }
     .quiz-secure-payment {
-        width: 65%;
+        width: 75%;
+    }
+    .quiz-content-row {
+        width: 40%;
     }
 }
